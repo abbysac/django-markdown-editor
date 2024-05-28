@@ -8,7 +8,7 @@ blocks:
   - name: 'Block #1'
     task:
       jobs:
-        - name: 'Job #1'
+        - name: Build
           commands:
             - sem-version python 3.11
             - checkout
