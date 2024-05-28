@@ -31,3 +31,12 @@ blocks:
       jobs:
         - name: Test
           commands: []
+  - name: 'Block #3'
+    task:
+      prologue:
+        commands:
+          - cd martor_demo
+          - python manage.py check --deploy
+      jobs:
+        - name: checklist
+          commands: []
