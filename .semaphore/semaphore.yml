@@ -40,3 +40,10 @@ blocks:
       jobs:
         - name: checklist
           commands: []
+  - name: 'Block #4'
+    task:
+      jobs:
+        - name: style checking
+          commands:
+            - pip install flake8
+            - flake8 martor_demo/ --max-line-length=127
